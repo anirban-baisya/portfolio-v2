@@ -5,7 +5,7 @@ import { personalInfo } from "@/data/portfolioData";
 const links = [
   { icon: Github, href: personalInfo.profiles.github, label: "GitHub" },
   { icon: Linkedin, href: personalInfo.profiles.linkedin, label: "LinkedIn" },
-  { icon: Mail, href: `mailto:${personalInfo.email}`, label: "Email" },
+  { icon: Mail, href: `https://mail.google.com/mail/?view=cm&to=${personalInfo.email}&su=${encodeURIComponent("Let's Work Together")}&body=${encodeURIComponent(`Hi ${personalInfo.name},`)}`, label: "Email" },
 ];
 
 export function Footer() {

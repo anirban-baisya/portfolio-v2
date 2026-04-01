@@ -10,7 +10,7 @@ const contactLinks = [
     icon: Mail,
     label: "Email",
     value: personalInfo.email,
-    href: `mailto:${personalInfo.email}`,
+    href:`https://mail.google.com/mail/?view=cm&to=${personalInfo.email}&su=${encodeURIComponent("Let's Work Together")}&body=${encodeURIComponent(`Hi ${personalInfo.name},`)}` ,
     color: "#6c63ff",
   },
   {
@@ -90,7 +90,7 @@ export function Contact() {
             I'm currently available for freelance work, full-time roles, and interesting collaborations.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            <a href={`mailto:${personalInfo.email}`} className="btn-primary">
+            <a href={`https://mail.google.com/mail/?view=cm&to=${personalInfo.email}&su=${encodeURIComponent("Let's Work Together")}&body=${encodeURIComponent(`Hi ${personalInfo.name},`)}`} target="_blank" rel="noopener noreferrer" className="btn-primary">
               <Send size={15} /> Send an Email
             </a>
             <button onClick={copyEmail} className="btn-outline">

@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react";
 import { ThemeToggle } from "@/components/ui/ThemeToggle";
 import { useScrollSpy } from "@/hooks/useScrollSpy";
 import { cn } from "@/lib/utils";
+import { personalInfo } from "@/data/portfolioData";
 
 const NAV_LINKS = [
   { id: "about", label: "About" },
@@ -43,7 +44,7 @@ export function Navbar() {
           "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
           scrolled
             ? "bg-background/80 backdrop-blur-xl border-b border-border shadow-sm"
-            : "bg-transparent"
+            : "bg-transparent",
         )}
       >
         <div className="container mx-auto px-6 max-w-6xl h-16 flex items-center gap-6">
@@ -75,7 +76,7 @@ export function Navbar() {
                 onClick={() => scrollTo(link.id)}
                 className={cn(
                   "nav-link text-xs",
-                  activeId === link.id && "active"
+                  activeId === link.id && "active",
                 )}
               >
                 {link.label}
@@ -86,7 +87,9 @@ export function Navbar() {
           <div className="flex items-center gap-2">
             <ThemeToggle />
             <a
-              href="mailto:anirban.baisya2020@vitbhopal.ac.in"
+              href={`https://mail.google.com/mail/?view=cm&to=${personalInfo.email}&su=${encodeURIComponent("Let's Work Together")}&body=${encodeURIComponent(`Hi ${personalInfo.name},`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:flex btn-primary text-xs px-4 py-2"
             >
               Hire Me
@@ -126,7 +129,7 @@ export function Navbar() {
                     "text-left py-3 px-4 rounded-xl text-sm font-semibold border-b border-border/50 last:border-0 transition-colors",
                     activeId === link.id
                       ? "text-brand-500"
-                      : "text-muted-foreground hover:text-foreground"
+                      : "text-muted-foreground hover:text-foreground",
                   )}
                   style={{ fontFamily: "'Syne', sans-serif" }}
                 >
@@ -134,7 +137,9 @@ export function Navbar() {
                 </motion.button>
               ))}
               <a
-                href="mailto:anirban.baisya2020@vitbhopal.ac.in"
+                href={`https://mail.google.com/mail/?view=cm&to=${personalInfo.email}&su=${encodeURIComponent("Let's Work Together")}&body=${encodeURIComponent(`Hi ${personalInfo.name},`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn-primary mt-2 justify-center"
                 onClick={() => setMenuOpen(false)}
               >
