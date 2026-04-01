@@ -2,7 +2,7 @@
 
 > Personal portfolio website built with React.js, Tailwind CSS v4, Framer Motion & Lucide Icons.
 
-🔗 **Live Demo:** [https://anirban-baisya.vercel.app](https://anirban-baisya.vercel.app)
+🔗 **Live Demo:** [https://anirban-portfolio-v2.netlify.app](https://anirban-portfolio-v2.netlify.app)
 
 ---
 
