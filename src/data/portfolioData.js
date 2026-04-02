@@ -85,6 +85,20 @@ export const workHistory = [
     ],
     tags: ["React.js", "Next.js", "React Native", "Testing"],
   },
+  {
+  company: "Freelance",
+  role: "Frontend Developer (Freelance)",
+  start: "October 2025",
+  end: "Present",
+  logo: "💻",
+  color: "#ff6584",
+  responsibilities: [
+    "Developed responsive and dynamic web applications using React.js, Next.js, and JavaScript.",
+    "Built reusable UI components and optimized performance for faster load times and better user experience.",
+    "Integrated third-party APIs and payment gateways like Stripe and Paytm.",
+  ],
+  tags: ["React.js", "React Native", "Next.js", "JavaScript", "Stripe", "Paytm", "API Integration"],
+  },
 ];
 
 export const education = [
